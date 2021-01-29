@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="input-box">
+        <h1>Register with us</h1>
+
+        <form>
+            <div class="box">
+                <label for="login" class="box_label">Login</label>
+                <input type="text" id="login" class="box_input" placeholder="Please enter Your login">
+                <small class="box_feedback" id="login-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="email" class="box_label">E-mail</label>
+                <input type="email" id="email" class="box_input" placeholder="Please enter Your e-mail address">
+                <small class="box_feedback" id="email-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="name" class="box_label">Name</label>
+                <input type="text" id="name" class="box_input" placeholder="Please enter Your name">
+                <small class="box_feedback" id="name-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="lastname" class="box_label">Last name</label>
+                <input type="text" id="lastname" class="box_input" placeholder="Please enter Your last name">
+                <small class="box_feedback" id="lastname-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="password" class="box_label">Password</label>
+                <input type="password" id="password" class="box_input" placeholder="Please enter Your password">
+                <small class="box_feedback" id="password-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="password2" class="box_label">Confirm password</label>
+                <input type="password" id="password2" class="box_input" placeholder="Re-write Your password">
+                <small class="box_feedback" id="password2-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="phone" class="box_label">Phone number</label>
+                <input type="number" id="phone" class="box_input" placeholder="Please enter Your phone number (optional)">
+                <small class="box_feedback" id="phone-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="birth" class="box_label">Date of birth</label>
+                <input type="date" id="birth" class="box_input">
+                <small class="box_feedback" id="birth-feedback"></small>
+            </div>
+    
+            <div class="box">
+                <label for="country" class="box_label">Country</label>
+                <select id="country" name="country" class="box-country">
+                    <option value="SelectCountry" selected>Please select Your country</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Bosnia and Hercegovina">Bosnia and Hercegovina</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="England">England</option>
+                    <option value="Estiona">Estonia</option>                    
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Netherlands">The Netherlands</option>
+                    <option value="North Macedonia">North Macedonia</option>
+                    <option value="Northern Ireland">Northern Ireland</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Scotland">Scotland</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Wales">Wales</option>
+                    <option value="Other">Outside Europe</option>
+                </select>
+                <small class="box_feedback" id="country-feedback"></small>
+                <input type="text" class="country-outside hidden2" placeholder="Your country" id="Other">
+                <small class="box-feedback" id="Other-feedback"></small>
+            </div>
+
+            <label for="gender" class="box_label">Gender</label>
+
+            <div class="box-gender" id="gender">
+
+                <div class="box-radio">
+                    <label for="male">Male</label>
+                </div>
+                
+                <div class="box-radio">
+                    <input type="radio" id="male" class="box_input" name="gender" value="Male">
+                </div>
+
+                <div class="box-radio">
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="box-radio">
+                    <input type="radio" id="female" class="box_input" name="gender" value="Female">
+                </div>
+
+                <div class="box-radio">
+                    <label for="other">Other</label>
+                </div>
+
+                <div class="box-radio">
+                    <input type="radio" id="other" class="box_input" name="gender" value="other">   
+                </div>
+            
+                <small class="box_feedback" id="gender-feedback"></small>
+                <input type="text" class="box_input hidden" id="otherGender" style="margin-top: 2rem;" placeholder="Please specify Your gender...">
+                <small class="box_feedback" id="otherGender-feedback"></small> 
+            </div>
+
+            <button class="button" id="submit">Submit</button>
+        </form>
+    </div>
+        
+        <div id="results" class="results-box hidden">
+
+            <h1>Your Data</h1>
+
+            <div class="box">
+                <p>Login: <span id="loginres"></span></p>        
+            </div>
+
+            <div class="box">
+                <p>E-mail: <span id="emailres"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Name: <span id="nameres"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Last Name: <span id="lastnameres"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Password: <span id="passwordres"></span></p>
+                <span id="password2res"></span>
+            </div>
+
+            <div class="box">
+                <p>Phone Number: <span id="phoneres"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Date of birth: <span id="birthres"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Country: <span id="countryres"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Gender: <span id="genderres"></span></p>
+            </div>
+
+            <button class="button" id="confirm">Confirm Your Data</button>
+        </div>
+
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
